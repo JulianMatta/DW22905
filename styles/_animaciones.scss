@@ -1,0 +1,45 @@
+.html {
+    animation: aparecer 1s ;
+    @keyframes aparecer {
+        from {
+            opacity: 0.5;
+        }
+    
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+
+.header__logo{
+    
+    &:hover {
+    animation: girar 2s linear 
+    }
+    @keyframes girar {
+    
+        from {
+            transform: rotateY(0deg);
+        }
+    
+        to {
+            transform: rotateY(360deg);
+        }
+    }
+}
+
+
+
+
+
+
+.galeriaproductos {
+    .imagen {
+
+        &:hover {
+            transition: 0.5s;
+            transform: scale(1.5);
+            }
+        }
+}

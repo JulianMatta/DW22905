@@ -1,0 +1,55 @@
+.producto__grillaprincipal{
+    max-width: 1100px;
+
+    padding-left: 2rem;
+    
+    margin:  4rem auto;
+}
+
+.producto__grillaprincipalh2 {
+    text-align: center;
+}
+
+.grillaprincipal__articulo {
+    margin-top:  2rem;
+
+    display: grid;
+
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: auto;
+
+    gap: 2rem ;
+
+    .producto__boton--compra {
+
+        background-color: grey;
+    
+        border: $colorTerciario;
+    
+        margin-right: 2rem;
+    
+        &:hover {
+            transition: 0.7s;
+            background-color: $colorTerciario ;
+        }
+    
+    }
+    p {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 980px) {
+    .grillaprincipal__articulo {
+        grid-template-columns:  1fr 1fr;
+        grid-template-rows: auto;
+    }
+}
+
+@media (max-width: 630px) {
+    .grillaprincipal__articulo {
+        grid-template-columns:  1fr ;
+        grid-template-rows: auto;
+    }
+}

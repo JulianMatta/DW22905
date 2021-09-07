@@ -1,0 +1,178 @@
+// .contenido-principal {
+//     max-width: 1100px;
+
+//     margin:  4rem auto;
+    
+//     h2 {
+//         text-align: center;
+//     }
+// }
+
+// @mixin flex($direccion, $justify, $align, $wrap) {
+//     display: flex;
+//     flex-direction: $direccion;
+//     justify-content: $justify;
+//     align-items: $align;
+//     flex-wrap: $wrap;
+// }
+
+// .producto__grilla {
+    
+//     @include flex(row, space-between, center, nowrap);
+    
+//     padding: 30px;
+
+//     background-color: $colorSecundario;
+//     color: white;
+
+//     padding-top: 20px ;
+//     padding-left: 15px;
+
+// }
+
+
+
+// .producto__grilla {
+    
+//     @include flex(row, space-between, center, nowrap);
+    
+//     padding: 30px;
+
+//     background-color: $colorSecundario;
+//     color: white;
+
+//     padding-top: 20px ;
+//     padding-left: 15px;
+// }
+
+
+// .producto__grilla {
+//     margin-top:  2rem;
+
+//     display: grid;
+
+//     justify-content: center;
+//     grid-template-columns: 1fr 1fr 1fr 1fr ;
+//     grid-template-rows: 1fr 1fr 1fr 1fr ;
+
+//     gap: 2rem ;
+
+//     p {
+//         padding: 0 1rem;
+//     }
+
+//     p:nth-of-type(1) {
+//         grid-column:  2 / 4 ;
+//         grid-row: 1 / 2;
+//     }
+//     p:nth-of-type(2) {
+//         grid-column:  1 / 2 ;
+//         grid-row: 1 / 4;
+    
+//     }
+//     p:last-of-type {
+//         grid-column: 2;
+//     }
+
+//     article {
+    
+//         grid-column:  1 / 2 ;
+//         grid-row: 1 / 4;
+//         box-shadow: 5px 5px 5px 5px black;
+
+//         img {
+//             width: 100%;
+//         }
+//     }
+
+
+// }
+
+
+//  ==== PAG. PRODUCTO ===
+
+img {
+    width: 100%;
+}
+
+.producto__galeria {
+    display: flex;
+    border: $colorSecundario;
+
+    h3 {
+        margin: 0.5rem;
+    }
+    p {
+        padding: 1rem;
+    }
+}
+
+.producto__imagen {
+    display: flex;
+    width: 200px;
+    margin: 2rem;
+    border: solid rgba(187, 0, 0, 0.349);
+    flex: 1 1 2rem;
+
+    div {
+        padding: 1rem;
+    }
+}
+
+article {
+    display: flex;
+    background-color: cornsilk;
+    
+    
+    
+    justify-content: space-evenly;
+    //  space-between 
+    //  space-evenly 
+    //  space-arraund 
+    //  center 
+    align-items: center;
+    
+}
+
+.producto__boton--compra {
+
+    background-color: grey;
+
+    border: $colorTerciario;
+
+    margin-right: 2rem;
+
+    &:hover {
+        transition: 0.7s;
+        background-color: $colorTerciario ;
+    }
+
+}
+
+
+
+
+@mixin boton($color, $rounded) {
+    padding: 10px, 30px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    background-color: $color;
+
+    @if $rounded == true {
+        border-radius: 5px;
+    } 
+
+    &:hover {
+        @if $hover == light {
+            background-color: lighten($color: $color, $amount: 15%);
+        } @else if $hover == dark {
+            background-color: darken($color: $color, $amount: 15%);
+        }
+    }
+}
+
+.boton2 {
+    @include boton(coral, true, light)
+}

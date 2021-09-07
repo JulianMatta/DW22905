@@ -1,0 +1,15 @@
+.enlaces-nav {
+    li {
+        a{
+            margin: 0.5;
+            transition: all 1s;
+        
+            &:hover {
+                color: $colorSecundario;
+                background-color: $coloPrimario;
+            }
+        
+        }
+    }
+
+}
