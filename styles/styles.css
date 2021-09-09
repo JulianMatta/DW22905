@@ -279,4 +279,18 @@ textarea {
     justify-content: center;
     justify-content: center;
   }
+}
+.benchmark__texto1 {
+  display: inline-block;
+  width: 80%;
+  margin-top: 1rem;
+  margin-left: 5rem;
+  margin-right: 2rem;
+  margin-bottom: 0;
+  padding: 1rem;
+}
+.benchmark__texto1 h2 {
+  text-align: center;
+  margin-bottom: 7px;
+  border-bottom: 3px;
 }/*# sourceMappingURL=styles.css.map */
