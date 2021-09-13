@@ -15,7 +15,6 @@ body {
   display: flex;
 }
 .inicio__textos .inicio__texto1 {
-  display: inline-block;
   width: 80%;
   margin-top: 1rem;
   margin-left: 5rem;
@@ -29,7 +28,6 @@ body {
   border-bottom: 3px;
 }
 .inicio__textos .inicio__texto2 {
-  display: inline-block;
   width: 80%;
   margin-top: 1rem;
   margin-left: 5rem;
