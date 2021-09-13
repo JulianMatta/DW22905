@@ -12,12 +12,11 @@ body {
 }
 
 .inicio__textos .inicio__texto1 {
-  display: flex;
   width: 60%;
   margin-top: 1rem;
   margin-left: 5rem;
-  margin-right: 2rem;
-  margin-bottom: 0;
+  margin-right: 5rem;
+  margin-bottom: 1rem;
   padding: 1rem;
 }
 .inicio__textos .inicio__texto1 h2 {
