@@ -116,8 +116,9 @@ textarea {
   padding-top: 20px;
   padding-left: 15px;
 }
-.footer .footer__redes--link {
+.footer .footer__redes {
   text-decoration: none;
+  padding: 5px;
 }
 
 .footer__redes--facebook {
