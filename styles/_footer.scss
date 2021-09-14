@@ -21,21 +21,40 @@
     
 
     .footer__redes {
+
+        display: inline-block;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        list-style: none;
+
         text-decoration: none;
-        padding: 5px;
+        padding: 1rem;
+        margin: 1rem;
     }
+
+    
 }
 
 $redes: (
-    facebook: #3a5795 ,
-    instagram:  #55acee,
+    facebook: blue ,
+    instagram:  red,
     mail: #c25e30,
-);
-
-@each $red, $color in $redes {
-    .footer__redes--#{$red} {
-        padding: 10px;
-        background-color: $color;
+    );
+    
+    @each $red, $color in $redes {
+        .footer__redes--#{$red} {
+            padding: 5px;
+            // background-color: $color;
+        }
+        
+    }
+    
+    
+@media (max-width: 640px) {
+    .footer{
+        flex-direction: column;
     }
     
 }
