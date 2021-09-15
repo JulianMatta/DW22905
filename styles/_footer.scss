@@ -18,38 +18,55 @@
     padding-top: 20px ;
     padding-left: 15px;
 
-    
+    a {
+        text-decoration: none;
+        color: white;
+    }
 
     .footer__redes {
-
+        
         display: inline-block;
         justify-content: space-between;
         align-items: center;
         flex-wrap: nowrap;
-
+        
         list-style: none;
-
+        
         text-decoration: none;
-        padding: 1rem;
+        padding: 5px;
         margin: 1rem;
+        
+        li{
+            a{
+
+                .footer__redes--instagram {
+                    padding: 5px;
+                    text-decoration: none;
+                    color: white;
+                }
+                .footer__redes--facebook{
+                    padding: 5px;
+                    text-decoration: none;
+                    color: white;
+                }
+                .footer__redes--linkedin{
+                    padding: 5px;
+                    text-decoration: none;
+                    color: white;
+                }
+                .footer__redes--mail{
+                    padding: 5px;
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
     }
 
     
 }
 
-$redes: (
-    facebook: blue ,
-    instagram:  red,
-    mail: #c25e30,
-    );
-    
-    @each $red, $color in $redes {
-        .footer__redes--#{$red} {
-            padding: 5px;
-            // background-color: $color;
-        }
-        
-    }
+
     
     
 @media (max-width: 640px) {

@@ -116,6 +116,10 @@ textarea {
   padding-top: 20px;
   padding-left: 15px;
 }
+.footer a {
+  text-decoration: none;
+  color: white;
+}
 .footer .footer__redes {
   display: inline-block;
   justify-content: space-between;
@@ -123,20 +127,28 @@ textarea {
   flex-wrap: nowrap;
   list-style: none;
   text-decoration: none;
-  padding: 1rem;
+  padding: 5px;
   margin: 1rem;
 }
-
-.footer__redes--facebook {
+.footer .footer__redes li a .footer__redes--instagram {
   padding: 5px;
+  text-decoration: none;
+  color: white;
 }
-
-.footer__redes--instagram {
+.footer .footer__redes li a .footer__redes--facebook {
   padding: 5px;
+  text-decoration: none;
+  color: white;
 }
-
-.footer__redes--mail {
+.footer .footer__redes li a .footer__redes--linkedin {
   padding: 5px;
+  text-decoration: none;
+  color: white;
+}
+.footer .footer__redes li a .footer__redes--mail {
+  padding: 5px;
+  text-decoration: none;
+  color: white;
 }
 
 @media (max-width: 640px) {
