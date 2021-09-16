@@ -218,6 +218,7 @@ textarea {
 }
 .producto__body .producto__categorias .card {
   margin: 5px;
+  list-style: none;
 }
 
 @media (max-width: 1140px) {

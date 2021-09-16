@@ -82,26 +82,56 @@
               <div class="col-3">
                 <div class="list-group" id="list-tab" role="tablist">
                   <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Todos los Productos</a>
-                  <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Placas de Video</a>
+                  <a class="producto__listacategorias--placasdevideo list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Placas de Video</a>
                   <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Procesadores</a>
                   <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Placas Madre</a>
-                  <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Memorias Ram</a>
-                  <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Fuentes de Energia</a>
-                  <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Coolers</a>
+                  <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-memorias" role="tab" aria-controls="list-settings">Memorias Ram</a>
+                  <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-fuentesenergia" role="tab" aria-controls="list-settings">Fuentes de Energia</a>
+                  <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-cooler" role="tab" aria-controls="list-settings">Coolers</a>
                 </div>
               </div>
             
               <div class="col-7">
                 <div class="tab-content" id="nav-tabContent">
   
-                  <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                  <div class="producto__todosproductos tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
   
                   <section class="producto__categorias">
+                    <div class="card" style="width: 18rem;">
+                      <img src="../Imagenes/img_procesador_amd_ryzen_9_5850.jpg" class="card-img-top" loading="lazy" alt="ryzen 9">
+                      <div class="card-body">
+                        <h5 class="card-title">AMD Ryzen 9 5950X</h5>
+                        <p class="card-text">
+                          <li>4.9Hz Turbo</li>
+                          <li>32 Hilos</li>
+                          <li>NO Posee Gráficos Integrados</li>
+                        </p>
+                        <p> <strong>Precio:</strong>  $112000</p>
+                        <a href="#" class="producto__boton--compra btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                      <img src="../Imagenes/img_procesador_amd_ryzen_7_3800x.jpg" class="card-img-top" loading="lazy" alt="ryzen 7">
+                      <div class="card-body">
+                        <h5 class="card-title">AMD Ryzen 7 3800X</h5>
+                        <p class="card-text">
+                          <li>4.7Hz Turbo</li>
+                          <li>16 Hilos</li>
+                          <li>NO Posee Gráficos Integrados</li>
+                        </p>
+                        <p> <strong>Precio:</strong>  $51000</p>
+                        <a href="#" class="producto__boton--compra btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
+
                     <div class="card" style="width: 18rem;">
                       <img src="../Imagenes/img_nvidia_asus_3060.jpg" class="card-img-top" loading="lazy" alt="gpu_nvidia_3060">
                       <div class="card-body">
                         <h5 class="card-title">Nvidia RTX 3060</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">
+  
+                        </p>
                         <p> <strong>Precio:</strong>  $120000</p>
                         <a href="#" class="producto__boton--compra btn btn-primary">Comprar</a>
                       </div>
@@ -147,29 +177,351 @@
                       </div>
                     </div>
   
-                  </section>
-                  </div>
-                  
-                  <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-
-                    <section class="producto__categorias" >
-
                     <div class="card" style="width: 18rem;">
-                      <img src="../Imagenes/img_nvidia_asus_3060.jpg" class="card-img-top" loading="lazy" alt="gpu_nvidia_3060">
+                      <img src="../Imagenes/img_placamadre_asus_tuf_x570.jpg" class="card-img-top" loading="lazy" alt="asus tuf x570">
                       <div class="card-body">
-                        <h5 class="card-title">Nvidia RTX 3060</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <p> <strong>Precio:</strong>  $120000</p>
+                        <h5 class="card-title">ASUS TUF X570-PLUS</h5>
+                        <p class="card-text">
+                          <li>AM4</li>
+                          <li>PCIe 4.0</li>
+                          <li>Dual M.2</li>
+                        </p>
+                        <p> <strong>Precio:</strong>  $27.400</p>
                         <a href="#" class="producto__boton--compra btn btn-primary">Comprar</a>
                       </div>
                     </div>
 
-                  </section>
+                      <div class="card" style="width: 18rem;">
+                        <img src="../Imagenes/img_placamadre_gigabyte_aorus_b570.jpg" class="card-img-top" loading="lazy" alt="aorus b450">
+                        <div class="card-body">
+                          <h5 class="card-title">Gigabyte B450 AORUS</h5>
+                          <p class="card-text">
+                            <li>M RGB</li>
+                            <li>FUSION</li>
+                            <li>M-ATX</li>
+                          </p>
+                          <p> <strong>Precio:</strong>  $13.250</p>
+                          <a href="#" class="producto__boton--compra btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
 
+                      <div class="card" style="width: 18rem;">
+                        <img src="../Imagenes/img_memoria_corsair_vengeance_4gb.jpg" class="card-img-top" loading="lazy" alt="Corsair vengeance 4gb">
+                        <div class="card-body">
+                          <h5 class="card-title">Corsair VENGEANCE 4GB</h5>
+                          <p class="card-text">
+                            <li>DDR4 </li>
+                            <li>2400MHz</li>
+                            <li>LPX BLACK</li>
+                          </p>
+                          <p> <strong>Precio:</strong>  $3.600</p>
+                          <a href="#" class="producto__boton--compra btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+
+                      <div class="card" style="width: 18rem;">
+                        <img src="../Imagenes/img_memoria_oloy__2x32gb.jpg" class="card-img-top" loading="lazy" alt="oloy 2x32gb">
+                        <div class="card-body">
+                          <h5 class="card-title">OLOy 64GB (2x32GB)</h5>
+                          <p class="card-text">
+                            <li>DDR4 </li>
+                            <li>3000MHz</li>
+                            <li>Owl Black</li>
+                          </p>
+                          <p> <strong>Precio:</strong>  $34.700</p>
+                          <a href="#" class="producto__boton--compra btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+
+                      <div class="card" style="width: 18rem;">
+                        <img src="../Imagenes/img_fuenteenergia_thermaltake_750.jpg" class="card-img-top" loading="lazy" alt="thermaltake_Smart_BX1_750W">
+                        <div class="card-body">
+                          <h5 class="card-title">Thermaltake Smart BX1 750W RGB</h5>
+                          <p class="card-text">
+                            <li>80 Plus Bronze</li>
+                            <li>750 w</li>
+                            <li>ATX</li>
+                          </p>
+                          <p> <strong>Precio:</strong>  $14.890</p>
+                          <a href="#" class="producto__boton--compra btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+
+                        <div class="card" style="width: 18rem;">
+                          <img src="../Imagenes/img_fuenteenergia_corsair_750x.jpg" class="card-img-top" loading="lazy" alt="Corsair_RM750X_Full_Modular">
+                          <div class="card-body">
+                            <h5 class="card-title">Corsair RM750X</h5>
+                            <p class="card-text">
+                              <li>Full Modular</li>
+                              <li>80 Plus Gold</li>
+                              <li>750 w</li>
+                            </p>
+                            <p> <strong>Precio:</strong>  $19.550</p>
+                            <a href="#" class="producto__boton--compra btn btn-primary">Comprar</a>
+                          </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                          <img src="../Imagenes/img_cooler_aerocool_120mm.jpg" class="card-img-top" loading="lazy" alt="aerocool_120mm">
+                          <div class="card-body">
+                            <h5 class="card-title">Aerocool Duo 12 Pro ARGB Pro 120mm x 3</h5>
+                            <p class="card-text">
+                              <li>ARGB </li>
+                              <li>Controladora </li>
+                              <li>Control Remoto</li>
+                            </p>
+                            <p> <strong>Precio:</strong>  $4.420</p>
+                            <a href="#" class="producto__boton--compra btn btn-primary">Comprar</a>
+                          </div>
+                        </div>
+  
+                        <div class="card" style="width: 18rem;">
+                          <img src="../Imagenes/img_cooler_aerocool_240mm.jpg" class="card-img-top" loading="lazy" alt="aerocool_240mm">
+                          <div class="card-body">
+                            <h5 class="card-title">Aerocool ASTRO 24</h5>
+                            <p class="card-text">
+                              <li>ARGB</li>
+                              <li>120 mm</li>
+                              <li>1000 rpm</li>
+                            </p>
+                            <p> <strong>Precio:</strong>  $3.760</p>
+                            <a href="#" class="producto__boton--compra btn btn-primary">Comprar</a>
+                          </div>
+                        </div>
+                        
+                  </section>
+                  </div>
+                  
+                  <div class="producto__placasdevideo tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+
+                    <section class="producto__categorias" >
+
+                      <div class="card" style="width: 18rem;">
+                        <img src="../Imagenes/img_nvidia_asus_3060.jpg" class="card-img-top" loading="lazy" alt="gpu_nvidia_3060">
+                        <div class="card-body">
+                          <h5 class="card-title">Nvidia RTX 3060</h5>
+                          <p class="card-text"> 
+                            <li>12GB GDDR6 </li>
+                            <li>Twin Edge </li>
+                            <li>LHR</li>
+                          </p>
+                          <p> <strong>Precio:</strong>  $120000</p>
+                          <a href="#" class="producto__boton--compra btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+    
+                      <div class="card" style="width: 18rem;">
+                        <img src="../Imagenes/img_nvidia_asus_3070.jpg" class="card-img-top" loading="lazy" alt="gpu_nvidia_3070">
+                        <div class="card-body">
+                          <h5 class="card-title">Nvidia RTX 3070</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <p> <strong>Precio:</strong>  $180000</p>
+                          <a href="#" class="producto__boton--compra btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+            
+                      <div class="card" style="width: 18rem;">
+                        <img src="../Imagenes/img_nvidia_asus_3060TI.jpg" class="card-img-top" loading="lazy" alt="gpu_nvidia_3060ti">
+                        <div class="card-body">
+                          <h5 class="card-title">Nvidia RTX 3060Ti</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <p> <strong>Precio:</strong>  $150000</p>
+                          <a href="#" class="producto__boton--compra btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+            
+                      <div class="card" style="width: 18rem;">
+                        <img src="../Imagenes/img_nvidia_asus_3070.jpg" class="card-img-top" loading="lazy" alt="gpu_nvidia_3070">
+                        <div class="card-body">
+                          <h5 class="card-title">Nvidia RTX 3070</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <p> <strong>Precio:</strong>  $180000</p>
+                          <a href="#" class="producto__boton--compra btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+            
+                      <div class="card" style="width: 18rem;">
+                        <img src="../Imagenes/img_nvidia_asus_3070.jpg" class="card-img-top" loading="lazy" alt="gpu_nvidia_3070">
+                        <div class="card-body">
+                          <h5 class="card-title">Nvidia RTX 3070</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <p> <strong>Precio:</strong>  $180000</p>
+                          <a href="#" class="producto__boton--compra btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+
+                  </section>
                   </div>
 
-                  <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
-                  <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+                  <div class="producto__procesadores tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                    <section class="producto__categorias" >
+
+                      <div class="card" style="width: 18rem;">
+                        <img src="../Imagenes/img_procesador_amd_ryzen_9_5850.jpg" class="card-img-top" loading="lazy" alt="ryzen 9">
+                        <div class="card-body">
+                          <h5 class="card-title">AMD Ryzen 9 5950X</h5>
+                          <p class="card-text">
+                            <li>4.9Hz Turbo</li>
+                            <li>32 Hilos</li>
+                            <li>NO Posee Gráficos Integrados</li>
+                          </p>
+                          <p> <strong>Precio:</strong>  $112000</p>
+                          <a href="#" class="producto__boton--compra btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+
+                      <div class="card" style="width: 18rem;">
+                        <img src="../Imagenes/img_procesador_amd_ryzen_7_3800x.jpg" class="card-img-top" loading="lazy" alt="ryzen 7">
+                        <div class="card-body">
+                          <h5 class="card-title">AMD Ryzen 7 3800X</h5>
+                          <p class="card-text">
+                            <li>4.7Hz Turbo</li>
+                            <li>16 Hilos</li>
+                            <li>NO Posee Gráficos Integrados</li>
+                          </p>
+                          <p> <strong>Precio:</strong>  $51000</p>
+                          <a href="#" class="producto__boton--compra btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+
+                    </section>
+                  </div>
+
+                  <div class="producto__placasmadre tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                    <section class="producto__categorias" >
+
+                      <div class="card" style="width: 18rem;">
+                        <img src="../Imagenes/img_placamadre_asus_tuf_x570.jpg" class="card-img-top" loading="lazy" alt="asus tuf x570">
+                        <div class="card-body">
+                          <h5 class="card-title">ASUS TUF X570-PLUS</h5>
+                          <p class="card-text">
+                            <li>AM4</li>
+                            <li>PCIe 4.0</li>
+                            <li>Dual M.2</li>
+                          </p>
+                          <p> <strong>Precio:</strong>  $27.400</p>
+                          <a href="#" class="producto__boton--compra btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+
+                        <div class="card" style="width: 18rem;">
+                          <img src="../Imagenes/img_placamadre_gigabyte_aorus_b570.jpg" class="card-img-top" loading="lazy" alt="aorus b450">
+                          <div class="card-body">
+                            <h5 class="card-title">Gigabyte B450 AORUS</h5>
+                            <p class="card-text">
+                              <li>M RGB</li>
+                              <li>FUSION</li>
+                              <li>M-ATX</li>
+                            </p>
+                            <p> <strong>Precio:</strong>  $13.250</p>
+                            <a href="#" class="producto__boton--compra btn btn-primary">Comprar</a>
+                          </div>
+                        </div>
+                    </section>
+                  </div>
+
+                  <div class="producto__memoriasram tab-pane fade" id="list-memorias" role="tabpanel" aria-labelledby="list-settings-list">
+                    <section class="producto__categorias" >
+
+                      <div class="card" style="width: 18rem;">
+                        <img src="../Imagenes/img_memoria_corsair_vengeance_4gb.jpg" class="card-img-top" loading="lazy" alt="Corsair vengeance 4gb">
+                        <div class="card-body">
+                          <h5 class="card-title">Corsair VENGEANCE 4GB</h5>
+                          <p class="card-text">
+                            <li>DDR4 </li>
+                            <li>2400MHz</li>
+                            <li>LPX BLACK</li>
+                          </p>
+                          <p> <strong>Precio:</strong>  $3.600</p>
+                          <a href="#" class="producto__boton--compra btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+
+                      <div class="card" style="width: 18rem;">
+                        <img src="../Imagenes/img_memoria_oloy__2x32gb.jpg" class="card-img-top" loading="lazy" alt="oloy 2x32gb">
+                        <div class="card-body">
+                          <h5 class="card-title">OLOy 64GB (2x32GB)</h5>
+                          <p class="card-text">
+                            <li>DDR4 </li>
+                            <li>3000MHz</li>
+                            <li>Owl Black</li>
+                          </p>
+                          <p> <strong>Precio:</strong>  $34.700</p>
+                          <a href="#" class="producto__boton--compra btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+
+                    </section>
+                  </div>
+
+                  <div class="producto__fuenteenergia tab-pane fade" id="list-fuentesenergia" role="tabpanel" aria-labelledby="list-settings-list">
+                    <section class="producto__categorias" >
+
+                      <div class="card" style="width: 18rem;">
+                        <img src="../Imagenes/img_fuenteenergia_thermaltake_750.jpg" class="card-img-top" loading="lazy" alt="thermaltake_Smart_BX1_750W">
+                        <div class="card-body">
+                          <h5 class="card-title">Thermaltake Smart BX1 750W RGB</h5>
+                          <p class="card-text">
+                            <li>80 Plus Bronze</li>
+                            <li>750 w</li>
+                            <li>ATX</li>
+                          </p>
+                          <p> <strong>Precio:</strong>  $14.890</p>
+                          <a href="#" class="producto__boton--compra btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+
+                        <div class="card" style="width: 18rem;">
+                          <img src="../Imagenes/img_fuenteenergia_corsair_750x.jpg" class="card-img-top" loading="lazy" alt="Corsair_RM750X_Full_Modular">
+                          <div class="card-body">
+                            <h5 class="card-title">Corsair RM750X</h5>
+                            <p class="card-text">
+                              <li>Full Modular</li>
+                              <li>80 Plus Gold</li>
+                              <li>750 w</li>
+                            </p>
+                            <p> <strong>Precio:</strong>  $19.550</p>
+                            <a href="#" class="producto__boton--compra btn btn-primary">Comprar</a>
+                          </div>
+                        </div>
+
+                    </section>
+                  </div>
+
+                  <div class="producto__cooler tab-pane fade" id="list-cooler" role="tabpanel" aria-labelledby="list-settings-list">
+                    <section class="producto__categorias" >
+
+                      <div class="card" style="width: 18rem;">
+                        <img src="../Imagenes/img_cooler_aerocool_120mm.jpg" class="card-img-top" loading="lazy" alt="aerocool_120mm">
+                        <div class="card-body">
+                          <h5 class="card-title">Aerocool Duo 12 Pro ARGB Pro 120mm x 3</h5>
+                          <p class="card-text">
+                            <li>ARGB </li>
+                            <li>Controladora </li>
+                            <li>Control Remoto</li>
+                          </p>
+                          <p> <strong>Precio:</strong>  $4.420</p>
+                          <a href="#" class="producto__boton--compra btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+
+                      <div class="card" style="width: 18rem;">
+                        <img src="../Imagenes/img_cooler_aerocool_240mm.jpg" class="card-img-top" loading="lazy" alt="aerocool_240mm">
+                        <div class="card-body">
+                          <h5 class="card-title">Aerocool ASTRO 24</h5>
+                          <p class="card-text">
+                            <li>ARGB</li>
+                            <li>120 mm</li>
+                            <li>1000 rpm</li>
+                          </p>
+                          <p> <strong>Precio:</strong>  $3.760</p>
+                          <a href="#" class="producto__boton--compra btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+
+                    </section>
+                  </div>
+
                 </div>
               </div>
             </div>
