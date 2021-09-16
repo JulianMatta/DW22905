@@ -6,6 +6,10 @@
 
         .list-group-item{
         
+            &:focus {
+                color: $colorSecundario;
+                background-color: $colorTerciario ;
+            }
             &:hover {
                 transition: 0.7s;
                 background-color: $colorTerciario ;

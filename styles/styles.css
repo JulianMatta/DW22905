@@ -209,6 +209,10 @@ textarea {
 .producto__body .producto__listacategorias {
   width: 900px;
 }
+.producto__body .producto__listacategorias .list-group-item:focus {
+  color: black;
+  background-color: gold;
+}
 .producto__body .producto__listacategorias .list-group-item:hover {
   transition: 0.7s;
   background-color: gold;
