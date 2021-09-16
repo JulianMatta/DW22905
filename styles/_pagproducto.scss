@@ -3,6 +3,15 @@
 
     .producto__listacategorias{
         width: 900px;
+
+        .list-group-item{
+        
+            &:hover {
+                transition: 0.7s;
+                background-color: $colorTerciario ;
+        }
+
+
     }
 
     .producto__categorias{
@@ -16,7 +25,22 @@
         .card {
             margin: 5px;
             list-style: none;
+        
+        .producto__boton--compra {
+
+            background-color: grey;
+        
+            border: $colorTerciario;
+        
+            margin-right: 2rem;
+        
+            &:hover {
+                transition: 0.7s;
+                background-color: $colorTerciario ;
+            }
         }
+        }
+    }
     }
 }
 
