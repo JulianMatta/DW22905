@@ -5,72 +5,114 @@
 
     display: grid;
 
-    justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr ;
-
+    
+    // justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr  ;
+    
+    // align-items: stretch;
+    
     text-align: center;
     gap: 1rem ;
     
     
-    .sobrenosotros__carta {
+    // .sobrenosotros__carta {
 
+    //     justify-content: center;
+    //     align-items: center;
+    // }
+}
+
+.nosotros__textos {
+
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    .nosotros__texto1 {
+    
+        display: inline-block;
+    
+        width: 80%;
+    
+        margin-top: 1rem;
+        margin-left: 5rem;
+        margin-right: 2rem;
+        margin-bottom: 0;
+        padding: 1rem;
+    
+        h2 {
+            text-align: center;
+            margin-bottom: 7px;
+        
+            border-bottom: 3px;
+        }
+    }
+
+    .nosotros__texto2 {
+        // display: inline-block;
+    
+        width: 80%;
+    
+        align-items: center;
+
+        margin-top: 1rem;
+        margin-left: 5rem;
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+    
+        padding: 1rem;
+    
+        h3 {
+            text-align: center;
+            margin-bottom: 7px;
+        
+            border-bottom: 3px;
+        }
+    
+    }
+
+}
+
+
+
+@media (max-width: 405px) {
+    .nosotros__sobrenosotros {
+        grid-column: 1fr;
+        grid-row:  1fr 1fr 1fr;
+        margin: auto;
 
         justify-content: center;
         align-items: center;
+
+        .sobrenosotros__carta {
+
+
+            justify-content: center;
+            align-items: center;
+
+        }
     }
-}
-
-
-.nosotros__texto1 {
-
-    display: inline-block;
-
-    width: 80%;
-
-    margin-top: 1rem;
-    margin-left: 5rem;
-    margin-right: 2rem;
-    margin-bottom: 0;
-    padding: 1rem;
-
-    h2 {
-        text-align: center;
-        margin-bottom: 7px;
-    
-        border-bottom: 3px;
-    }
-}
-
-.nosotros__texto2 {
-    display: inline-block;
-
-    width: 80%;
-
-    margin-top: 1rem;
-    margin-left: 5rem;
-    margin-right: 2rem;
-    margin-bottom: 1rem;
-
-    padding: 1rem;
-
-    h3 {
-        text-align: center;
-        margin-bottom: 7px;
-    
-        border-bottom: 3px;
-    }
-
 }
 
 
 @media (max-width: 790px) {
     .nosotros__sobrenosotros {
         grid-column: 1fr;
-        grid-row:  1fr 1fr 1fr;
+        // grid-row:  1fr 1fr 1fr;
         margin: 0px;
 
         justify-content: center;
         align-items: center;
+
+        .sobrenosotros__carta {
+
+
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
 
@@ -78,9 +120,17 @@
 
 @media (max-width: 1040px) {
     .nosotros__sobrenosotros {
-        grid-template-columns:  1fr ;
+        grid-template-columns:  1fr;
         justify-content: center;
         justify-content: center;
+
+        align-items: stretch;
+        .sobrenosotros__carta {
+
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
 }
