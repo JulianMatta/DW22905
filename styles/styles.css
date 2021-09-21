@@ -242,16 +242,51 @@ textarea {
   .producto__body {
     display: flex;
   }
-  .producto__body .producto__categorias {
+  .producto__body .producto__listacategorias {
+    width: 900px;
+  }
+  .producto__body .producto__listacategorias .list-group-item:focus {
+    color: black;
+    background-color: gold;
+  }
+  .producto__body .producto__listacategorias .list-group-item:hover {
+    transition: 0.7s;
+    background-color: gold;
+  }
+  .producto__body .producto__listacategorias .producto__categorias {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+  }
+  .producto__body .producto__listacategorias .producto__categorias .card {
+    margin: 5px;
+    list-style: none;
+  }
+  .producto__body .producto__listacategorias .producto__categorias .card .producto__boton--compra {
+    background-color: grey;
+    border: gold;
+    margin-right: 2rem;
+  }
+  .producto__body .producto__listacategorias .producto__categorias .card .producto__boton--compra:hover {
+    transition: 0.7s;
+    background-color: gold;
   }
 }
 @media (max-width: 840px) {
   .producto__body {
     display: flex;
   }
-  .producto__body .producto__categorias {
+  .producto__body .producto__listacategorias {
+    width: 900px;
+  }
+  .producto__body .producto__listacategorias .list-group-item:focus {
+    color: black;
+    background-color: gold;
+  }
+  .producto__body .producto__listacategorias .list-group-item:hover {
+    transition: 0.7s;
+    background-color: gold;
+  }
+  .producto__body .producto__listacategorias .producto__categorias {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
@@ -260,12 +295,13 @@ textarea {
   .producto__body {
     display: flex;
   }
-  .producto__body .producto__listacategorias {
+  .producto__body .producto__listacategorias .col-3 {
     display: inline-block;
-    width: 900px;
+    width: 100%;
     margin-bottom: 5px;
+    padding-left: 1rem;
   }
-  .producto__body .producto__listacategorias .producto__categorias {
+  .producto__body .producto__listacategorias .col-3 .producto__categorias {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
