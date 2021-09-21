@@ -3,9 +3,9 @@
 
     .producto__listacategorias{
         width: 900px;
-
-        .list-group-item{
         
+        .list-group-item{
+            
             &:focus {
                 color: $colorSecundario;
                 background-color: $colorTerciario ;
@@ -53,7 +53,7 @@
         display: flex;
 
         .producto__listacategorias{
-            width: 900px;
+            width: 800px;
     
             .list-group-item{
             
@@ -102,7 +102,7 @@
         display: flex;
 
         .producto__listacategorias{
-            width: 900px;
+            width: 800px;
     
             .list-group-item{
             
@@ -153,7 +153,8 @@
         display: flex;
     
         .producto__listacategorias{
-            width: 900px;
+            display: inline-block;
+            width: 100%;
     
             .list-group-item{
             
@@ -170,32 +171,83 @@
     .producto__categorias {
         grid-template-columns:  1fr ;
         grid-template-rows: auto;
+
+        .card {
+            margin: 5px;
+            list-style: none;
+
+        .producto__boton--compra {
+
+            background-color: grey;
+    
+            border: $colorTerciario;
+    
+            margin-right: 2rem;
+    
+            &:hover {
+                transition: 0.7s;
+                background-color: $colorTerciario ;
+            }
+        }
+        }
         }
     }
 }
 }
 
 
-@media (max-width: 540px) {
+@media (max-width: 840px) {
     .producto__body {
         display: flex;
 
         .producto__listacategorias{
-            .col-3{
 
                 display: inline-block;
-                width: 100%;
-                margin-bottom: 5px;
-                padding-left: 1rem;
 
-                .producto__categorias {
-                    grid-template-columns:  1fr ;
-                    grid-template-rows: auto;
-                    }
+                .col-3{
+                    width: 100%;
+                    margin-bottom: 5px;
+                    padding-left: 1rem;
+
                 }
-
+            
+            .list-group-item{
+            
+                &:focus {
+                    color: $colorSecundario;
+                    background-color: $colorTerciario ;
+                }
+                &:hover {
+                    transition: 0.7s;
+                    background-color: $colorTerciario ;
+                }
             }
 
+            .producto__categorias {
+                grid-template-columns:  1fr ;
+                grid-template-rows: auto;
+
+                .card {
+                    margin: 5px;
+                    list-style: none;
+    
+                .producto__boton--compra {
+    
+                    background-color: grey;
+            
+                    border: $colorTerciario;
+            
+                    margin-right: 2rem;
+            
+                    &:hover {
+                        transition: 0.7s;
+                        background-color: $colorTerciario ;
+                    }
+                }
+                }
+            }
         }
+        
+    }
     
 }
