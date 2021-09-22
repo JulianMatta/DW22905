@@ -17,3 +17,37 @@
         border-bottom: 3px;
     }
 }
+
+.benchmark__acordeon{
+
+    width: 80%;
+    align-items: center;
+    text-align: center;
+    margin-left: 5rem;
+
+    .accordion{
+        
+        .accordion-item{
+            
+            .accordion-header{
+                display: flex;
+
+                .accordion-button{
+                    text-align: center;
+                    align-content: center;
+                    align-items: center;
+                }
+            }
+
+            .benchmark__banner--boton{
+                img {
+
+                    width: 60%;
+                    margin-top: 1rem;
+
+                    
+                }
+            }
+        }
+    }
+}
