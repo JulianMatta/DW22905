@@ -1,26 +1,39 @@
-.nosotros__sobrenosotros {
+.nosotros__listacartas {
+    display: flex;
+    width: 100%;
+    
+    .nosotros__sobrenosotros {
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-content: center;
 
-    padding: 1rem;
-    margin-top:  2rem;
+        align-items: center;
+        
+        text-align: center;
 
-    display: grid;
+        padding: 1rem;
 
-    
-    // justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr  ;
-    
-    // align-items: stretch;
-    
-    text-align: center;
-    gap: 1rem ;
-    
-    
-    // .sobrenosotros__carta {
+        .sobrenosotros__carta {
+            padding: 5px;
+            width: 400px;
+            height: 225px;
 
-    //     justify-content: center;
-    //     align-items: center;
-    // }
+        }
+
+        
+        
+        // .sobrenosotros__carta {
+    
+        //     justify-content: center;
+        //     align-items: center;
+        // }
+    }
+
 }
+
+
 
 .nosotros__textos {
 

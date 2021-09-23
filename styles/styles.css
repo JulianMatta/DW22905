@@ -27,7 +27,7 @@ body {
   margin-bottom: 1rem;
   padding: 1rem;
 }
-.inicio__textos .inicio__texto1 h2 {
+.inicio__textos .inicio__texto1 h1 {
   text-align: center;
   margin-bottom: 7px;
   border-bottom: 3px;
@@ -40,7 +40,7 @@ body {
   margin-bottom: 1rem;
   padding: 1rem;
 }
-.inicio__textos .inicio__texto2 h3 {
+.inicio__textos .inicio__texto2 h2 {
   text-align: center;
   margin-bottom: 7px;
   border-bottom: 3px;
@@ -327,13 +327,23 @@ body {
     background-color: gold;
   }
 }
-.nosotros__sobrenosotros {
-  padding: 1rem;
-  margin-top: 2rem;
+.nosotros__listacartas {
+  display: flex;
+  width: 100%;
+}
+.nosotros__listacartas .nosotros__sobrenosotros {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  gap: 1rem;
+  padding: 1rem;
+}
+.nosotros__listacartas .nosotros__sobrenosotros .sobrenosotros__carta {
+  padding: 5px;
+  width: 400px;
+  height: 225px;
 }
 
 .nosotros__textos {
