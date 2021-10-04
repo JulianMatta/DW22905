@@ -1,37 +1,35 @@
 .nosotros__listacartas {
     display: flex;
     width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
     
-    .nosotros__sobrenosotros {
+    .nosotros__sobrenosotros{
         
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        justify-content: center;
-
+        display: flex;
         align-items: center;
+        margin: 1rem;
+        width: 100%;
+        flex-direction: row;
+        margin-left: 9.5rem;
+        margin-right: 9.5rem;
+
         
-        text-align: center;
-
-        padding: 1rem;
-
+        
         .sobrenosotros__carta {
             padding: 5px;
-            width: 400px;
+            margin: 5px;
+            width: 500px;
             height: 225px;
-
+            
         }
-
         
-        
-        // .sobrenosotros__carta {
-    
-        //     justify-content: center;
-        //     align-items: center;
-        // }
     }
-
+        
 }
+
 
 
 
@@ -43,6 +41,7 @@
     flex-direction: column;
     align-items: center;
     flex-wrap: nowrap;
+    justify-items: center;
 
     .nosotros__texto1 {
     
@@ -51,8 +50,6 @@
         width: 80%;
     
         margin-top: 1rem;
-        margin-left: 5rem;
-        margin-right: 2rem;
         margin-bottom: 0;
         padding: 1rem;
     
@@ -65,17 +62,14 @@
     }
 
     .nosotros__texto2 {
-        // display: inline-block;
     
         width: 80%;
     
         align-items: center;
 
         margin-top: 1rem;
-        margin-left: 5rem;
-        margin-right: 2rem;
         margin-bottom: 1rem;
-    
+        justify-items: center;
         padding: 1rem;
     
         h3 {
@@ -91,61 +85,102 @@
 
 
 
-@media (max-width: 405px) {
-    .nosotros__sobrenosotros {
-        grid-column: 1fr;
-        grid-row:  1fr 1fr 1fr;
-        margin: auto;
 
+@media (max-width: 1170px) {
+    .nosotros__listacartas {
+        display: flex;
+        width: 100%;
+        
         justify-content: center;
-        align-items: center;
-
-        .sobrenosotros__carta {
-
-
-            justify-content: center;
+        text-align: center;
+        justify-items: center;
+        
+        .nosotros__sobrenosotros{
+            
+            display: flex;
             align-items: center;
-
-        }
-    }
-}
-
-
-@media (max-width: 790px) {
-    .nosotros__sobrenosotros {
-        grid-column: 1fr;
-        // grid-row:  1fr 1fr 1fr;
-        margin: 0px;
-
-        justify-content: center;
-        align-items: center;
-
-        .sobrenosotros__carta {
-
-
-            justify-content: center;
-            align-items: center;
-        }
-    }
-}
-
-
-
-@media (max-width: 1040px) {
-    .nosotros__sobrenosotros {
-        grid-template-columns:  1fr;
-        justify-content: center;
-        justify-content: center;
-
-        align-items: stretch;
-        .sobrenosotros__carta {
-
             width: 100%;
-            justify-content: center;
-            align-items: center;
+            flex-direction: row;
+            
+            
+            
+            .sobrenosotros__carta {
+                padding: 5px;
+                margin: 5px;
+                width: 500px;
+                height: 225px;
+                
+            }
+            
         }
+        
     }
-
+    
 }
 
+@media (max-width: 980px) {
+    .nosotros__listacartas {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        justify-items: center;
+        
+        .nosotros__sobrenosotros{
+            
+            display: flex;
+            align-items: center;
+            margin: 1rem;
+            width: 100%;
+            flex-direction: column;
+            margin-left: 1rem;
+            
+            
+            
+            .sobrenosotros__carta {
+                padding: 5px;
+                margin: 5px;
+                width: 500px;
+                height: 225px;
+                
+            }
+            
+        }
+        
+    }
+}
+
+@media (max-width: 375px) {
+    .nosotros__listacartas {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        
+        .nosotros__sobrenosotros{
+            
+            display: flex;
+            align-items: center;
+            margin: auto;
+            width: 300px;
+            flex-direction: column;
+            
+            
+            
+            .sobrenosotros__carta {
+                padding: 0;
+                margin-top: 5px;
+                width: 260px;
+                height: 200px;
+                
+            }
+            
+        }
+        
+    }
+}
 
