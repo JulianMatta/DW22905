@@ -338,11 +338,8 @@ body {
 .nosotros__listacartas .nosotros__sobrenosotros {
   display: flex;
   align-items: center;
-  margin: 1rem;
-  width: 100%;
+  margin-top: 1rem;
   flex-direction: row;
-  margin-left: 9.5rem;
-  margin-right: 9.5rem;
 }
 .nosotros__listacartas .nosotros__sobrenosotros .sobrenosotros__carta {
   padding: 5px;
@@ -396,7 +393,6 @@ body {
   .nosotros__listacartas .nosotros__sobrenosotros {
     display: flex;
     align-items: center;
-    width: 100%;
     flex-direction: row;
   }
   .nosotros__listacartas .nosotros__sobrenosotros .sobrenosotros__carta {
